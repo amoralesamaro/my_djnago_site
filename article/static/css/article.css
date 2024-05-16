@@ -1,6 +1,5 @@
 .page-header {
     background-color: darkblue;
-    /* Changed to match the first image */
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -23,10 +22,7 @@ h4 {
 }
 
 .date {
-    color: #16123a;
-    display: block;
-    margin-bottom: 20px;
-    /* Add space between date and title */
+    color: #828282;
 }
 
 .save {
@@ -49,26 +45,23 @@ h4 {
 
 .post {
     margin-bottom: 70px;
-    padding-top: auto;
 }
 
 .post h2 a,
 .post h2 a:visited {
-    color: black;
-    /* Changed to black */
+    color: #000000;
 }
 
 .post>.date,
 .post>.actions {
-    float: none;
-    /* Remove float to ensure stacking */
+    float: right;
 }
 
 .btn-secondary,
 .btn-secondary:visited {
     color: darkblue;
     background: none;
-    border-color: darkblue;
+    border-color: #C25100;
 }
 
 .btn-secondary:hover {
