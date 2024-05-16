@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'article/base.html' %}
 
-<head>
-    <title>Django Boys blog</title>
-</head>
+{% block content %}
 
-<body>
-    <header>
-        <h1><a href="/">Django Boys Journal</a></h1>
-    </header>
+{% for article in articles %}
+<article class="post">
+    <time class="date">published: {{ article.published_date }}</time>
+    <h2><a href="{% url 'post_detail' pk=article.pk %}">{{ article.title }}</a></h2>
+    <p>{{ article.text|linebreaksbr }}</p>
+</article>
+{% endfor %}
 
-    {% for article in articles %}
-    <article>
-        <time>published: {{ article.published_date }}</time>
-        <h2><a href="">{{ article.title }}</a></h2>
-        <p>{{ article.text|linebreaksbr }}</p>
-    </article>
-    {% endfor %}
-
-</body>
-
-</html>
+{% endblock %}
