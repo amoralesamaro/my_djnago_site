@@ -57,11 +57,15 @@ h4 {
     float: right;
 }
 
+.button-group {
+    float: right;
+}
+
 .btn-secondary,
 .btn-secondary:visited {
     color: darkblue;
     background: none;
-    border-color: #C25100;
+    border-color: darkblue;
 }
 
 .btn-secondary:hover {
