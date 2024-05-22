@@ -13,14 +13,19 @@
 <body>
     <header class="page-header">
         <div class="container">
+            <h1><a href="/">Django Boys Journal</a></h1>
             {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu">
-                {% include './icons/journal-plus.svg' %}
+
+            <a href="{% url 'post_new' %}" class="add top-menu">
+                {% include './icons/plus-lg.svg' %}
+            </a>
+            <a href="/admin" class="admin top-menu">
+                {% include './icons/person-fill-gear.svg' %}
             </a>
             {% endif %}
-            <h1><a href="/">Django Boys Journal</a></h1>
         </div>
     </header>
+
 
     <main class="container">
         <div class="row">
