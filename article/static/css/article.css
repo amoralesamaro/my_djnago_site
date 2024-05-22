@@ -3,10 +3,10 @@
     margin-top: 0;
     margin-bottom: 10px;
     padding: 10px 20px 10px 20px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Temporary border for visibility */
 }
 
 
