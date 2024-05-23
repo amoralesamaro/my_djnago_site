@@ -1,14 +1,16 @@
 {% extends 'article/base.html' %}
+{% load static %}
 
 {% block content %}
 <article class="post">
     <aside class="actions">
         {% if user.is_authenticated %}
         <a class="btn btn-secondary" href="{% url 'post_edit' pk=article.pk %}">
-            {% include './icons/pencil.svg' %}
+            <img src="{% static 'images/pencil.svg' %}" alt="pencil icon">
         </a>
         {% endif %}
     </aside>
+
     {% if article.published_date %}
     <time class="date">
         {{ article.published_date }}
